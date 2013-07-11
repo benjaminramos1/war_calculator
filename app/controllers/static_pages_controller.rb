@@ -1,3 +1,5 @@
+# Code was based off of http://www.luisramalho.com/ruby-on-rails-simple-html-form-calculator
+
 class StaticPagesController < ApplicationController
     def home
 		@result = ''

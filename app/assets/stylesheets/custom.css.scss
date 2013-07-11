@@ -1,0 +1,81 @@
+@import "bootstrap";
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* navigation bar */
+.navbar-inner{
+	background-image: linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -o-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -moz-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -webkit-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -ms-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .nav li a {
+  color: white;
+  text-shadow: 0px 1px 0px #888888;
+}
+
+.navbar .nav li a:hover{
+  color: #DDDDDD;
+  text-shadow: 0px;
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-submenu:hover a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 129, 194);
+    background-image: linear-gradient(to bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+    background-repeat: repeat-x;
+}
+
+.navbar .nav li.fat a  {
+  color: #ED174C;
+  text-shadow: 0px 1px 0px #888888;
+}
+
+.navbar .nav li.fat a:hover  {
+  color: white;
+  text-shadow: 0px;
+}

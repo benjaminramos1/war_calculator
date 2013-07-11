@@ -3,11 +3,11 @@ WarCalculator::Application.routes.draw do
 
   root to: "static_pages#home"
 
-  get "static_pages/batter_war"
+  match '/batter_war', to: 'static_pages#batter_war'
 
-  get "static_pages/pitcher_war"
+  match '/pitcher_war', to: 'static_pages#pitcher_war'
 
-  get "static_pages/about"
+  match '/about', to: 'static_pages#about'
   
   match 'calculate' => 'static_pages#calculate'
 

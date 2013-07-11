@@ -1,0 +1,23 @@
+<header class="navbar navbar-inverse navbar-fixed-top">
+	<div class = "navbar-inner">
+		<div class = "container">
+		<%= link_to "WAR CALCULATOR", root_path, id: "logo" %>
+			<nav>
+				<ul class="nav pull-right">
+					<li><%= link_to "Home",    root_path %></li>
+					<li id="fat-menu" class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Calculate<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+						<li class = "fat"><%= link_to "Batter WAR", batter_war_path %></li>
+						<li class="divider"></li>
+						<li class = "fat"><%= link_to "Pitcher WAR", pitcher_war_path %></li>
+					  </ul>
+					</li>
+					<li><%= link_to "About WAR",    about_path %></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>

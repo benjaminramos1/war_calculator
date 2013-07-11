@@ -26,13 +26,40 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
 /* navigation bar */
-.navbar-inner{
-	background-image: linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
-	background-image: -o-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
-	background-image: -moz-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
-	background-image: -webkit-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
-	background-image: -ms-linear-gradient(bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+.navbar-inverse .navbar-inner{
+	background-image: linear-gradient(to bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -o-linear-gradient(to bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -moz-linear-gradient(to bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -webkit-linear-gradient(to bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
+	background-image: -ms-linear-gradient(to bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
 }
 
 #logo {

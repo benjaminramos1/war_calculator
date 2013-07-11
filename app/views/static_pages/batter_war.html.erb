@@ -1,2 +1,14 @@
-<h1>StaticPages#batter_war</h1>
-<p>Find me in app/views/static_pages/batter_war.html.erb</p>
+<div class="center hero-unit">
+	<div class="row-fluid">
+		<div class="span12">
+			<%= form_tag('/calculate') do %>
+				<%= text_field_tag(:f) %>
+				<%= label_tag(:f, "First Number") %><br />
+				<%= text_field_tag(:s) %>
+				<%= label_tag(:s, "Second Number") %><br />
+				<%= text_field_tag(:r, @result, :disabled => true) %>
+				<%= submit_tag("Calculate") %>
+			<% end %>
+		</div>
+	</div>
+</div>

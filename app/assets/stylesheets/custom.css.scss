@@ -1,4 +1,9 @@
 @import "bootstrap";
+@import "bootstrap-responsive";
+
+/* mixins, variables, etc. */
+
+$baseballred: #ED174C;
 
 /* universal */
 
@@ -18,12 +23,11 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+.center{
+	text-align: center;
+	h1 {
+		margin-bottom: 10px;
+	}
 }
 
 /* typography */
@@ -96,6 +100,12 @@ p {
     background-image: linear-gradient(to bottom, rgb(235,23,23) 0%, rgb(237,23,77) 58%);
     background-repeat: repeat-x;
 }
+
+.navbar-inverse .nav li.dropdown.open .dropdown-toggle, .navbar-inverse .nav li.dropdown.active .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active .dropdown-toggle {
+    background-color: white;
+    color: $baseballred;
+}
+
 
 .navbar .nav li.fat a  {
   color: #ED174C;

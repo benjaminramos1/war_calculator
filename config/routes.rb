@@ -9,9 +9,9 @@ WarCalculator::Application.routes.draw do
 
   match '/about', to: 'static_pages#about'
   
-  match 'calculate' => 'static_pages#calculate'
+  match 'bcalculate' => 'static_pages#bcalculate'
 
-
+  match 'pcalculate' => 'static_pages#pcalculate'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

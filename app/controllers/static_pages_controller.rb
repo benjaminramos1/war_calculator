@@ -2,18 +2,24 @@
 
 class StaticPagesController < ApplicationController
     def home
-		@result = ''
 	end
 	
-    def calculate
+    def bcalculate
 		@result = params[:f].to_i + params[:s].to_i
-		render :action => :home
+		render :action => :batter_war
+	end
+	
+	def pcalculate
+		@result = params[:f].to_i + params[:s].to_i
+		render :action => :pitcher_war
 	end
 
   def batter_war
+		@result = ''
   end
 
   def pitcher_war
+		@result = ''
   end
 
   def about

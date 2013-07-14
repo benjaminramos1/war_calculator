@@ -1,0 +1,20 @@
+<div class="center hero-unit">
+	<div class="row-fluid">
+		<div class="span12">
+			<%= form_tag('/fcalculate') do %>
+				<%= text_field_tag(:hr) %>
+				<%= label_tag(:hr, "HR") %><br />
+				<%= text_field_tag(:bb) %>
+				<%= label_tag(:bb, "Walks") %><br />
+				<%= text_field_tag(:hbp) %>
+				<%= label_tag(:hbp, "Hit by Pitch") %><br />
+				<%= text_field_tag(:k) %>
+				<%= label_tag(:k, "Strikeouts") %><br />
+				<%= text_field_tag(:ip) %>
+				<%= label_tag(:ip, "Innings Pitched") %><br />
+				<%= text_field_tag(:r, @result, :disabled => true) %>
+				<%= submit_tag("Calculate") %>
+			<% end %>
+		</div>
+	</div>
+</div>

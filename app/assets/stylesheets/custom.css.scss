@@ -4,6 +4,7 @@
 /* mixins, variables, etc. */
 
 $baseballred: #ED174C;
+$grayMediumLight: #eaeaea;
 
 /* universal */
 
@@ -33,23 +34,24 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
+  color: $baseballred;
   line-height: 1;
 }
 
 h1 {
   font-size: 2.5em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
   text-align: center;
+  .page {
+      text-align: left;
+   }
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
-  color: #999;
 }
 
 p {
@@ -115,4 +117,29 @@ p {
 
 a.btn-navbar:hover span.icon-bar, a.btn-navbar:active span.icon-bar{
 	background-color: $baseballred;
+}
+
+/* footer */
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid $grayMediumLight;
+	color: $grayLight;
+	a {
+		color: $gray;
+		&:hover {
+			color: $grayDarker;
+		}
+	}
+	small {
+		float: left;
+	}
+	ul {
+		float: right;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 10px
+		}
+	}
 }

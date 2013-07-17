@@ -11,11 +11,15 @@ WarCalculator::Application.routes.draw do
   
   match '/fip', to: 'static_pages#fip'
   
+  match '/woba', to: 'static_pages#woba'
+  
   match 'bcalculate' => 'static_pages#bcalculate'
 
   match 'pcalculate' => 'static_pages#pcalculate'
   
   match 'fcalculate' => 'static_pages#fcalculate'
+  
+   match 'wobacalculate' => 'static_pages#wobacalculate'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

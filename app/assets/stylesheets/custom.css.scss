@@ -5,7 +5,16 @@
 
 $baseballred: #ED174C;
 $grayMediumLight: #eaeaea;
-
+$hofred: #CF1141;
+$hofblue: #013775;
+$sedonared: #A71930;
+$sonoransand: #DBCEAC;
+$tigernavyblue: #10293F;
+$tigerorange: #DE4406;
+$metblue: #004685;
+$metorange: #F7742C;
+$yankeenavyblue: #1C2841;
+$giantsorange: #FB5B1F;
 /* universal */
 
 html {
@@ -31,9 +40,16 @@ textarea {
 	}
 }
 
-.hero-unit.info{
+.hero-unit{
 	padding: 30px;
-	
+}
+
+.hero-unit.main{
+	padding: 60px;
+}
+
+.hero-unit.leader{
+	padding: 5px;
 }
 /* typography */
 
@@ -56,9 +72,10 @@ h2 {
   letter-spacing: -1px;
   text-align: left;
   font-weight: normal;
-  .main {
-      text-align: center;
-  }
+}
+
+h2.main {
+    text-align: center;
 }
 
 p {
@@ -149,4 +166,36 @@ footer {
 			margin-left: 10px
 		}
 	}
+}
+
+
+/* MLB Team colors */
+.hero-unit.diamondbacks{
+	background-color: $sedonared;
+	color: $white;
+}
+
+.hero-unit.tigers{
+	background-color: $tigernavyblue;
+	color: $tigerorange;
+}
+
+.hero-unit.mets{
+	background-color: $metblue;
+	color: $metorange;
+}
+
+.hero-unit.yankees{
+	background-color: $yankeenavyblue;
+	color: $white;
+}
+
+.hero-unit.giants{
+	background-color: $black;
+	color: $giantsorange;
+}
+
+.hero-unit.hof{
+	background-color: $hofblue;
+	color: $hofred;
 }

@@ -8,15 +8,15 @@
 	<div class="row-fluid">
 		<div class="span3">
 			<div class="page-header">
-				<h1>What does wRAA mean?</h1>
+				<h3>What does wRAA mean?</h3>
 			</div>
-			<div class="center hero-unit info">
+			<div class="center hero-unit">
 				<p>Weighted Runs Above Average (or wRAA for short) tells the number of offensive runs a player contributes to their team compared to the average player.</p>
 			</div>
 			<div class="page-header">
-				<h1>What is the equation for wRAA?</h1>
+				<h3>What is the equation for wRAA?</h3>
 			</div>
-			<div class="center hero-unit info">
+			<div class="center hero-unit">
 				<p>wRAA = ((wOBA - league wOBA) / wOBA scale) * PA</p>
 				<small>league wOBA and wOBA scale are constants</small>
 				<p>Remember that<br/>
@@ -25,7 +25,7 @@
 			<small>Information from <a href ="http://www.fangraphs.com/library/offense/wraa/">Fangraphs</a></small>
 		</div>
 		<div class="span6">
-			<div class="center hero-unit">
+			<div class="center hero-unit main">
 				<%= form_tag('/wraacalculate') do %>
 					<%= label_tag(:pa, "Plate Appearances") %>
 					<%= text_field_tag(:pa) %><br />
@@ -93,5 +93,25 @@
 					</tr>
 				</tbody>
 			</table>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+			<h2 class = "main">Career wRAA Leader</h2>
+			<div class="center hero-unit leader yankees">
+				<p>Babe Ruth (1914-1935)<br />Career wRAA: 1437.2</p>
+			</div>
+		</div>
+		<div class="span4">
+			<h2 class = "main">Single-Season wRAA Leader</h2>
+			<div class="center hero-unit leader yankees">
+				<p>Babe Ruth (1920) - New York Yankees<br />121.1</p>
+			</div>
+		</div>
+		<div class="span4">
+			<h2 class = "main">2013 Season wRAA Leader</h2>
+			<div class="center hero-unit leader tigers">
+				<p>Miguel Cabrera - Detriot Tigers<br />54.1</p>
+			</div>
 		</div>
 	</div>

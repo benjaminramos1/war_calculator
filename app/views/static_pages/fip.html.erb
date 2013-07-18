@@ -1,4 +1,4 @@
-
+﻿
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="page-header">
@@ -8,10 +8,23 @@
 	</div>
 	<div class="row-fluid">
 		<div class="span3">
-			<h3>How to use the FIP Calculator</h3>
+			<div class="page-header">
+				<h3>What does FIP mean?</h3>
+			</div>
+			<div class="center hero-unit">
+				<p>Fielding Independent Pitching (or FIP for short) measures what a player's ERA should have looked like over a given time period, assuming that performance on balls in play and timing were league average. </p>
+			</div>
+			<div class="page-header">
+				<h3>What is the equation for FIP?</h3>
+			</div>
+			<div class="center hero-unit">
+				<p>FIP = ((13*HR)+(3*(BB+HBP))-(2*K))/IP + constant</p>
+				<small>The constant is generally around 3.20.</small>
+			</div>
+			<small>Information from <a href ="http://www.fangraphs.com/library/offense/fip/">Fangraphs</a></small>
 		</div>
 		<div class="span6">
-			<div class="center hero-unit">
+			<div class="center hero-unit main">
 				<%= form_tag('/fcalculate') do %>
 					<%= label_tag(:hr, "HR") %>
 					<%= text_field_tag(:hr) %><br />
@@ -69,5 +82,25 @@
 					</tr>
 				</tbody>
 			</table>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+			<h2 class = "main">Career FIP Leader</h2>
+			<div class="center hero-unit leader hof">
+				<p>Rube Waddell (1897-1910)<br />Career FIP: 1.92</p>
+			</div>
+		</div>
+		<div class="span4">
+			<h2 class = "main">Single-Season FIP Leader</h2>
+			<div class="center hero-unit leader giants">
+				<p>Christy Mathewson (1908) - New York Giants<br />1.36</p>
+			</div>
+		</div>
+		<div class="span4">
+			<h2 class = "main">2013 Season FIP Leader</h2>
+			<div class="center hero-unit leader mets">
+				<p>Matt Harvey - New York Mets<br />2.17</p>
+			</div>
 		</div>
 	</div>

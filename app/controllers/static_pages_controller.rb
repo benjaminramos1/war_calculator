@@ -23,6 +23,29 @@ class StaticPagesController < ApplicationController
 		render :action => :woba
 	end
 	
+	def wraacalculate
+		#Calculate wOBA
+		ubb = params[:bb].to_f - params[:ibb].to_f
+		c1 = 0.689 * ubb
+		c2 = 0.720 * params[:hbp].to_f
+		c3 = 0.885 * params[:single].to_f
+		c4 = 1.263 * params[:double].to_f
+		c5 = 1.604 * params[:triple].to_f
+		c6 = 2.081 * params[:hr].to_f
+		c7 = params[:ab].to_f + ubb + params[:sf].to_f +  params[:hbp].to_f
+		woba = (c1 + c2 + c3 + c4 + c5 + c6) / c7
+		compute = (((woba - 0.314) / 1.263) * params[:pa].to_f).to_s
+		@result = /\d{2}[.]\d/.match(compute)
+		render :action => :wraa
+	end
+	
+	def wraascalculate
+		#Calculate wOBA
+		compute = (((params[:woba].to_f - 0.314) / 1.263) * params[:pa].to_f).to_s
+		@result = /\d{2}[.]\d/.match(compute)
+		render :action => :wraasimple
+	end
+	
 	def pcalculate
 		@result = params[:f].to_i + params[:s].to_i
 		render :action => :pitcher_war

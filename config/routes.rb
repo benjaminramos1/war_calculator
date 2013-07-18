@@ -13,6 +13,9 @@ WarCalculator::Application.routes.draw do
   
   match '/woba', to: 'static_pages#woba'
   
+  match '/wraa', to: 'static_pages#wraa'
+  match '/wraasimple', to: 'static_pages#wraasimple'
+  
   match 'bcalculate' => 'static_pages#bcalculate'
 
   match 'pcalculate' => 'static_pages#pcalculate'
@@ -20,6 +23,10 @@ WarCalculator::Application.routes.draw do
   match 'fcalculate' => 'static_pages#fcalculate'
   
    match 'wobacalculate' => 'static_pages#wobacalculate'
+   
+   match 'wraacalculate' => 'static_pages#wraacalculate'
+   
+   match 'wraascalculate' => 'static_pages#wraascalculate'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

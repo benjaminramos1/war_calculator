@@ -1,0 +1,79 @@
+﻿<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>wRAA Calculator - Simple Version</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3">
+			<div class="page-header">
+				<h1>What does wRAA mean?</h1>
+			</div>
+			<div class="center hero-unit info">
+				<p>Weighted Runs Above Average (or wRAA for short) tells the number of offensive runs a player contributes to their team compared to the average player.</p>
+			</div>
+			<div class="page-header">
+				<h1>What is the equation for wRAA?</h1>
+			</div>
+			<div class="center hero-unit info">
+				<p>wRAA = ((wOBA - league wOBA) / wOBA scale) * PA</p>
+				<small>league wOBA and wOBA scale are constants</small>
+			</div>
+			<small>Information from <a href ="http://www.fangraphs.com/library/offense/wraa/">Fangraphs</a></small>
+		</div>
+		<div class="span6">
+			<div class="center hero-unit">
+				<%= form_tag('/wraascalculate') do %>
+					<%= label_tag(:pa, "Plate Appearances") %>
+					<%= text_field_tag(:pa) %><br />
+				    <%= label_tag(:woba, "wOBA") %>
+					<%= text_field_tag(:woba) %><br />
+					<%= submit_tag("Calculate") %><br />
+					<%= text_field_tag(:r, @result, :disabled => true) %>
+				<% end %>
+			</div>
+		</div>
+		<div class="span3">
+			<h3>wRAA Ratings Table</h3>
+			<p>From <a href = "a href ="http://www.fangraphs.com/library/offense/wraa/">Fangraphs</a></p>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Rating</th>
+						<th>wRAA</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Excellent</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>Great</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Above Average</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Average</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Below Average</td>
+						<td>-5</td>
+					</tr>
+					<tr>
+						<td>Poor</td>
+						<td>-10</td>
+					</tr>
+					<tr>
+						<td>Awful</td>
+						<td>-20</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
